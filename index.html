@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Polygon</title>
+</head>
+<body>
+    <h2>Fill Polygon</h2>
+    <canvas id="canvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    <br>
+    <p><b>Triangle: </b>(0,4.5), (4,-2), (-4,-2)</p>
+    <p><b>Square: </b>(-3,3), (3,3), (3,-3), (-3,-3)</p>
+    <p><b>Pentagon: </b>(0,4.5), (4.5,1.5), (3,-3.5), (-3,-3.5), (-4.5,1.5)</p>
+    <p><b>Hexagon: </b>(5,0), (2,4), (-2,4), (-5,0), (-2,-4), (2,-4)</p>
+
+    <label for="coords"><strong>Enter coordinates</strong> (or copy and paste the coordinates above):</label><br>
+    <small>
+    Format: (x,y), (x,y), ... <br>
+    Range: -5 to 5 <br>
+    Minimum: 3 points<br>
+    First and last coordinates will be connected.
+    </small>
+    <br>
+    <textarea id="coords" rows="4" cols="50" placeholder="(0,5), (4,1), (-4,-4), (4,-4), (-4,1)">(0,4.5),(4.5,1.5),(3,-3.5),(-3,-3.5),(-4.5,1.5)</textarea>
+    <button id="drawButton">Draw Shape</button>
+    <button id="fillButton">Fill Shape</button>
+
+    <script type="module" src="/src/app.js"></script>
+</body>
+
+</html>
